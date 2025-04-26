@@ -1,4 +1,4 @@
-# k3d Cluster Creator <0xF0><0x9F><0x9B><0x8E>️
+# k3d Cluster Creator (with TLS SANS support) 
 
 [![Bash Shell Script](https://img.shields.io/badge/language-Bash-brightgreen.svg)](https://www.gnu.org/software/bash/)
 [![k3d](https://img.shields.io/badge/tool-k3d-blue.svg)](https://k3d.io/)
@@ -20,3 +20,4 @@
 
 ```bash
 ./k3d_install_with_tls_sans.sh [OPTIONS] clusterName masterNodes workerNodes [TLS_SAN_1 TLS_SAN_2 ...]
+
