@@ -1,5 +1,7 @@
 #!/bin/bash
 
+k3dBinURI="https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh"
+
 function show_help() {
   echo "Usage: $0 [OPTIONS] clusterName masterNodes workerNodes [TLS_SAN_1 TLS_SAN_2 ...]"
   echo ""
@@ -51,7 +53,7 @@ fi
 echo ""
 echo "[*] Installing k3d binary in your system..."
 echo ""
-curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
+curl -s ${k3dBinURI} | bash
 
 if [[ ${tlsSansNameList[@]} != "" ]]; then
   # Create cluster with TLS SANS (Subject Alternative Names)
